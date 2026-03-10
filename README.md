@@ -4,8 +4,6 @@
 
 Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
 
----
-
 ## Contents
 
 - [Why agentic commerce](#why-agentic-commerce)
@@ -26,17 +24,13 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
 - [Ecosystem](#ecosystem)
   - [OpenAI](#openai)
   - [Shopify](#shopify)
-- [Bitrefill](#bitrefill)
+  - [Bitrefill](#bitrefill)
 - [Further reading](#further-reading)
 - [How the pieces fit together](#how-the-pieces-fit-together)
-
----
 
 ## Why agentic commerce
 
 AI agents are moving from "answer questions" to "get things done," including browsing products, comparing prices, paying, and managing orders on behalf of users. This requires new protocols for agent-to-agent communication, commerce standards that machines can parse, and payment rails that work without accounts, sessions, or human intervention.
-
----
 
 ## Commerce protocols
 
@@ -69,8 +63,6 @@ Google's open-source standard for the merchant side of agentic commerce (AP2 han
 - [UCP Code Samples](https://github.com/Universal-Commerce-Protocol/samples) - Reference implementations.
 - [UCP Google Developers Guide](https://developers.google.com/merchant/ucp) - Google's official UCP docs.
 
----
-
 ## Crypto payment rails
 
 Commerce protocols define what to buy; payment rails define how to pay. These enable programmatic, machine-to-machine payments without human intervention.
@@ -102,8 +94,6 @@ Practical toolkit for AI agents to make L402 payments. MCP server, CLI, and Pyth
 
 - [Fewsats MCP Server](https://github.com/fewsats/fewsats-mcp) - MCP server for AI agent payments.
 - [Fewsats Python SDK](https://github.com/Fewsats/L402-python) - L402 payments for AI agents.
-
----
 
 ## Fiat payment rails
 
@@ -147,8 +137,6 @@ Infrastructure backbone for most agentic commerce protocols (ACP, AP2, UCP). Key
 - [Cloudflare x402 Integration](https://developers.cloudflare.com/agents/x402/) - x402 in the Agents SDK.
 - [Cloudflare Secure Agentic Commerce](https://blog.cloudflare.com/secure-agentic-commerce/) - Visa and Mastercard protocol support announcement.
 
----
-
 ## Ecosystem
 
 Commerce platforms, merchant programs, and tooling that connect agents to real-world buying experiences. These sit above the payment rails — they decide *what* gets bought and *where*, while rails handle the *how*.
@@ -168,9 +156,7 @@ The first frontier-model company to build a full merchant commerce program. **Ch
 - [Shopify Storefront MCP Server](https://shopify.dev/docs/agents/catalog/storefront-mcp) - MCP server for product discovery and checkout.
 - [Shop Chat Agent](https://github.com/Shopify/shop-chat-agent) - Reference app for conversational commerce.
 
----
-
-## Bitrefill
+### Bitrefill
 
 Bitrefill maintains this list and provides agentic commerce tooling: an eCommerce MCP server, agent skills, and a CLI for gift cards, mobile top-ups, and eSIMs. Connect AI assistants (ChatGPT, Claude, Cursor) to search, buy, and manage Bitrefill products with crypto or account balance.
 
@@ -178,13 +164,9 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 - [Bitrefill Agents](https://github.com/bitrefill/agents) - Agent skills for shopping on Bitrefill (bitrefill-website, bitrefill-cli).
 - [Bitrefill CLI](https://github.com/bitrefill/cli) - Command-line client. Browse, buy, and manage gift cards, top-ups, and eSIMs.
 
----
-
 ## Further reading
 
 - [MCP, A2A, ACP, ANP Survey Paper](https://arxiv.org/html/2505.02279v1) - Academic comparison of all major agent protocols.
-
----
 
 ## How the pieces fit together
 
@@ -230,8 +212,6 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 │  Bitrefill (eCommerce MCP · Agent Skills · CLI)                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
-
----
 
 ## Contributing
 
