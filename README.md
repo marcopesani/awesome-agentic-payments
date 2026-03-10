@@ -13,11 +13,16 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [ACP (Agentic Commerce Protocol)](#acp-agentic-commerce-protocol)
   - [AP2 (Agent Payments Protocol)](#ap2-agent-payments-protocol)
   - [UCP (Universal Commerce Protocol)](#ucp-universal-commerce-protocol)
-- [Payment rails for agents](#payment-rails-for-agents)
+- [Crypto payment rails](#crypto-payment-rails)
   - [x402](#x402)
   - [L402](#l402)
   - [Fewsats](#fewsats)
-  - [Fiat payment rails](#fiat-payment-rails)
+- [Fiat payment rails](#fiat-payment-rails)
+  - [Stripe](#stripe)
+  - [Visa](#visa)
+  - [Mastercard](#mastercard)
+  - [PayPal](#paypal)
+  - [Cloudflare](#cloudflare)
 - [Ecosystem](#ecosystem)
   - [OpenAI](#openai)
   - [Shopify](#shopify)
@@ -66,7 +71,7 @@ Google's open-source standard for the merchant side of agentic commerce (AP2 han
 
 ---
 
-## Payment rails for agents
+## Crypto payment rails
 
 Commerce protocols define what to buy; payment rails define how to pay. These enable programmatic, machine-to-machine payments without human intervention.
 
@@ -98,18 +103,20 @@ Practical toolkit for AI agents to make L402 payments. MCP server, CLI, and Pyth
 - [Fewsats MCP Server](https://github.com/fewsats/fewsats-mcp) - MCP server for AI agent payments.
 - [Fewsats Python SDK](https://github.com/Fewsats/L402-python) - L402 payments for AI agents.
 
-### Fiat payment rails
+---
+
+## Fiat payment rails
 
 Card networks and payment processors building agent-specific primitives: tokenized credentials, sessionless merchant auth, and scoped payment tokens.
 
-#### Stripe
+### Stripe
 
 Infrastructure backbone for most agentic commerce protocols (ACP, AP2, UCP). Key innovation: **Shared Payment Tokens (SPTs)** -- single-use, scoped credentials compatible with Visa and Mastercard agent protocols.
 
 - [Stripe Agentic Commerce Docs](https://docs.stripe.com/agentic-commerce) - Primary documentation hub.
 - [Shared Payment Tokens (SPTs)](https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens) - Scoped, single-use payment credentials for agents.
 
-#### Visa
+### Visa
 
 **Trusted Agent Protocol (TAP)**: open framework using HTTP Message Signatures (RFC 9421) for agent authentication on the Visa network. Part of the broader **Intelligent Commerce** program (30+ partners in sandbox, early 2026).
 
@@ -117,13 +124,13 @@ Infrastructure backbone for most agentic commerce protocols (ACP, AP2, UCP). Key
 - [Trusted Agent Protocol (TAP)](https://developer.visa.com/capabilities/trusted-agent-protocol) - Authentication framework for agent-to-network communication.
 - [TAP GitHub Repository](https://github.com/visa/trusted-agent-protocol) - Reference implementation and spec.
 
-#### Mastercard
+### Mastercard
 
 **Agent Pay** introduces **Agentic Tokens**: scoped, time-limited cryptographic credentials for AI agent transactions. Official MCP server available for Mastercard APIs.
 
 - [Mastercard Agent Pay](https://developer.mastercard.com/mastercard-checkout-solutions/documentation/use-cases/agent-pay/) - Developer documentation.
 
-#### PayPal
+### PayPal
 
 **Agent Ready** uses the Agentic Commerce Protocol (ACP) so existing PayPal/Braintree merchants can accept payments through AI assistants (e.g. ChatGPT) with minimal integration; PayPal handles security and cross-platform compatibility.
 
@@ -132,7 +139,7 @@ Infrastructure backbone for most agentic commerce protocols (ACP, AP2, UCP). Key
 - [Store Sync](https://docs.paypal.ai/growth/agentic-commerce/store-sync/create-a-product-catalog) - Product catalog and cart integration for AI discovery and checkout.
 - [PayPal Agent Toolkit](https://github.com/paypal/agent-toolkit) - Integrate with PayPal APIs via function calling (OpenAI Agent SDK, LangChain, Vercel AI SDK, MCP). Invoices, orders, catalog, subscriptions, disputes, shipment tracking. ([npm](https://www.npmjs.com/package/@paypal/agent-toolkit))
 
-#### Cloudflare
+### Cloudflare
 
 **Agents SDK** natively supports x402 for stablecoin payments, with plans to integrate Visa and Mastercard agent protocols directly into the SDK.
 
