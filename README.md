@@ -1,4 +1,4 @@
-# Awesome Agentic Commerce [Awesome](https://awesome.re)
+# Awesome Agentic Commerce [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > A curated list of protocols, specs, SDKs, and tools powering the emerging agentic commerce stack: AI agents that discover, negotiate, pay, and transact autonomously.
 
@@ -18,16 +18,12 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [L402](#l402)
   - [Fewsats](#fewsats)
   - [Fiat payment rails](#fiat-payment-rails)
-    - [Stripe](#stripe)
-    - [Visa](#visa)
-    - [Mastercard](#mastercard)
-    - [PayPal](#paypal)
-    - [Cloudflare](#cloudflare)
 - [Ecosystem](#ecosystem)
   - [OpenAI](#openai)
   - [Shopify](#shopify)
 - [Bitrefill](#bitrefill)
 - [Further reading](#further-reading)
+- [How the pieces fit together](#how-the-pieces-fit-together)
 
 ---
 
@@ -155,7 +151,6 @@ Commerce platforms, merchant programs, and tooling that connect agents to real-w
 The first frontier-model company to build a full merchant commerce program. **ChatGPT Instant Checkout** (built on ACP) enables in-chat purchases without leaving the conversation. **Operator** / agent mode lets ChatGPT browse and transact autonomously on users' behalf. A growing roster of merchant apps (Target, Instacart, DoorDash) replaces the earlier direct-listing approach, giving retailers control over catalog, inventory, and fulfillment while remaining discoverable inside ChatGPT.
 
 - [ChatGPT Merchant Program](https://chatgpt.com/merchants/) - Apply for Instant Checkout access and build a ChatGPT merchant app.
-- [OpenAI Agentic Commerce Docs](https://developers.openai.com/commerce) - Developer documentation hub for ACP and Instant Checkout.
 - [ACP Get Started](https://developers.openai.com/commerce/guides/get-started/) - Step-by-step integration guide for merchants.
 
 ### Shopify
@@ -234,7 +229,3 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 ## Contributing
 
 Contributions welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first. Only official sources (specs, docs, SDKs, and official blog posts from the maintaining organizations) are accepted.
-
-## License
-
-[CC0](https://creativecommons.org/publicdomain/zero/1.0/)
