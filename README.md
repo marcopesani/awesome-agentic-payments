@@ -25,6 +25,7 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [OpenAI](#openai)
   - [Shopify](#shopify)
   - [Bitrefill](#bitrefill)
+  - [ATXP](#atxp)
 - [Further reading](#further-reading)
 - [How the pieces fit together](#how-the-pieces-fit-together)
 
@@ -163,6 +164,15 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 - [eCommerce MCP Server](https://docs.bitrefill.com/docs/ecommerce-mcp) - MCP server documentation.
 - [Bitrefill Agents](https://github.com/bitrefill/agents) - Agent skills for shopping on Bitrefill (bitrefill-website, bitrefill-cli).
 - [Bitrefill CLI](https://github.com/bitrefill/cli) - Command-line client. Browse, buy, and manage gift cards, top-ups, and eSIMs.
+
+### ATXP
+
+Agent Transaction Protocol — gives AI agents a funded identity in one command. Run `npx atxp@latest agent register` and your agent gets a USDC wallet on Base (x402-compatible), an @atxp.email inbox, phone number, and access to 100+ paid MCP tools (web search, image generation, SMS, LLM gateway). No human login required; $5 free credits on registration.
+
+- [ATXP](https://atxp.ai) - Agent account platform — wallet, email, phone, and paid tools.
+- [ATXP MCP Servers](https://docs.atxp.ai/mcp) - MCP endpoints for search, email, image gen, SMS, voice, 100+ LLMs.
+- [ATXP Quickstart](https://github.com/lamira-the-human/atxp-agent-quickstart) - Scaffold a full agent project in one command.
+- [ATXP npm package](https://npmjs.com/package/atxp) - CLI and SDK: `npx atxp@latest agent register`.
 
 ## Further reading
 
