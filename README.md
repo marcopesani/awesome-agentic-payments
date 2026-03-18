@@ -11,6 +11,7 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [ACP (Agentic Commerce Protocol)](#acp-agentic-commerce-protocol)
   - [AP2 (Agent Payments Protocol)](#ap2-agent-payments-protocol)
   - [UCP (Universal Commerce Protocol)](#ucp-universal-commerce-protocol)
+  - [MPP (Machine Payments Protocol)](#mpp-machine-payments-protocol)
 - [Crypto payment rails](#crypto-payment-rails)
   - [x402](#x402)
   - [L402](#l402)
@@ -63,6 +64,14 @@ Google's open-source standard for the merchant side of agentic commerce (AP2 han
 - [UCP Code Samples](https://github.com/Universal-Commerce-Protocol/samples) - Reference implementations.
 - [UCP Google Developers Guide](https://developers.google.com/merchant/ucp) - Google's official UCP docs.
 
+### MPP (Machine Payments Protocol)
+
+An open standard for machine payments, co-authored by Tempo and Stripe. MPP is designed to be extensible and agnostic to any payment method. It already supports payments over Tempo (TP-20 Tokens), Stripe API, Visa Network Tokens and Lightning Network.
+
+- [MPP Official Site](https://mpp.dev/) - Primary documentation portal.
+- [MPP Specification GitHub Repository](https://github.com/tempoxyz/mpp-specs) - Specifications for the Machine Payments Protocol.
+- [MPP-enabled Services Directory](https://mpp.dev/services) - Proxy endpoinds supporting MPP-over-Tempo payment for various data services.
+
 ## Crypto payment rails
 
 Commerce protocols define what to buy; payment rails define how to pay. These enable programmatic, machine-to-machine payments without human intervention.
@@ -105,6 +114,7 @@ Infrastructure backbone for most agentic commerce protocols (ACP, AP2, UCP). Key
 
 - [Stripe Agentic Commerce Docs](https://docs.stripe.com/agentic-commerce) - Primary documentation hub.
 - [Shared Payment Tokens (SPTs)](https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens) - Scoped, single-use payment credentials for agents.
+- [MPP Machine-to-Machine Payments](https://docs.stripe.com/payments/machine/mpp) - Private preview documentation page.
 
 ### Visa
 
