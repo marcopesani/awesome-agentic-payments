@@ -26,6 +26,7 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [OpenAI](#openai)
   - [Shopify](#shopify)
   - [Bitrefill](#bitrefill)
+  - [AsterPay](#asterpay)
 - [Further reading](#further-reading)
 - [How the pieces fit together](#how-the-pieces-fit-together)
 
@@ -173,6 +174,15 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 - [eCommerce MCP Server](https://docs.bitrefill.com/docs/ecommerce-mcp) - MCP server documentation.
 - [Bitrefill Agents](https://github.com/bitrefill/agents) - Agent skills for shopping on Bitrefill (bitrefill-website, bitrefill-cli).
 - [Bitrefill CLI](https://github.com/bitrefill/cli) - Command-line client. Browse, buy, and manage gift cards, top-ups, and eSIMs.
+
+### AsterPay
+
+EUR settlement infrastructure for AI agent payments. Converts USDC/EURC earned via x402 into EUR via SEPA Instant. 5-layer Know Your Agent (KYA) trust framework with ERC-8004 identity, sanctions screening, and trust scoring. MiCA-compliant EU entity. Listed on x402.org ecosystem and Circle Alliance.
+
+- [AsterPay Docs](https://asterpay.io/docs) - API documentation and integration guide.
+- [AsterPay MCP Server](https://www.npmjs.com/package/@asterpay/mcp-server) - 16-tool MCP server for trust scoring, settlement estimates, and market data.
+- [AsterPay Agent Skills](https://github.com/AsterPay/asterpay-skills) - Agent Skills for EUR settlement and trust scoring (agentskills.io format).
+- [AsterPay Python SDK](https://pypi.org/project/asterpay/) - Python SDK for settlement and KYA integration.
 
 ## Further reading
 
