@@ -26,6 +26,7 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [OpenAI](#openai)
   - [Shopify](#shopify)
   - [Bitrefill](#bitrefill)
+  - [SignalFuse](#signalfuse)
 - [Further reading](#further-reading)
 - [How the pieces fit together](#how-the-pieces-fit-together)
 
@@ -174,6 +175,13 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 - [Bitrefill Agents](https://github.com/bitrefill/agents) - Agent skills for shopping on Bitrefill (bitrefill-website, bitrefill-cli).
 - [Bitrefill CLI](https://github.com/bitrefill/cli) - Command-line client. Browse, buy, and manage gift cards, top-ups, and eSIMs.
 
+### SignalFuse
+
+x402-powered API gateway for AI agents on Base mainnet. Serves web search (Tavily, Brave), code execution (E2B), crypto trading signals, sentiment, and macro regime data. Agents pay per call with USDC -- no API key signup needed.
+
+- [SignalFuse API](https://api.signalfuse.co) - x402-enabled API gateway (Base mainnet).
+- [SignalFuse Starter Bot](https://github.com/cferjo/signalfuse-starter-bot) - Reference implementation for building agents on SignalFuse.
+
 ## Further reading
 
 - [MCP, A2A, ACP, ANP Survey Paper](https://arxiv.org/html/2505.02279v1) - Academic comparison of all major agent protocols.
@@ -220,6 +228,7 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 │  OpenAI (ChatGPT Instant Checkout · Operator · Merchant Apps)   │
 │  Shopify (Storefront MCP · UCP · 1M+ merchants)                 │
 │  Bitrefill (eCommerce MCP · Agent Skills · CLI)                 │
+│  SignalFuse (x402 API Gateway · Signals · Web Search · E2B)     │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
