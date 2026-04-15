@@ -180,7 +180,7 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 x402-powered API gateway for AI agents on Base mainnet. Serves web search (Tavily, Brave), code execution (E2B), crypto trading signals, sentiment, and macro regime data. Agents pay per call with USDC -- no API key signup needed.
 
 - [SignalFuse API](https://api.signalfuse.co) - x402-enabled API gateway (Base mainnet).
-- [SignalFuse Starter Bot](https://github.com/cferjo/signalfuse-starter-bot) - Reference implementation for building agents on SignalFuse.
+- [SignalFuse Starter Bot](https://github.com/hypeprinter007-stack/signalfuse-starter-bot) - Reference implementation for building agents on SignalFuse.
 
 ## Further reading
 
