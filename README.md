@@ -174,6 +174,15 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 - [Bitrefill Agents](https://github.com/bitrefill/agents) - Agent skills for shopping on Bitrefill (bitrefill-website, bitrefill-cli).
 - [Bitrefill CLI](https://github.com/bitrefill/cli) - Command-line client. Browse, buy, and manage gift cards, top-ups, and eSIMs.
 
+### Zuluworks AI
+
+Autonomous A2A factory on Cloudflare Workers selling 5 post-quantum-hardened agent services via x402 USDC on Base L2. ML-KEM-768 PQC tunnels (NIST FIPS 203), agent trust scoring (KYA), browser rendering, semantic memory, and Llama 3.1 inference. All settlement routed through the Coinbase CDP facilitator.
+
+- [Sovereign Shaka PQC-Shield Factory](https://api.zuluworksai.com) - Live production endpoint.
+- [Agent Card](https://api.zuluworksai.com/.well-known/agent.json) - A2A discovery manifest.
+- [x402 Bazaar Manifest](https://api.zuluworksai.com/.well-known/x402-bazaar.json) - Federated bazaar entry.
+- [MCP Manifest](https://api.zuluworksai.com/.well-known/mcp.json) - Claude / Cursor / Windsurf integration.
+
 ## Further reading
 
 - [MCP, A2A, ACP, ANP Survey Paper](https://arxiv.org/html/2505.02279v1) - Academic comparison of all major agent protocols.
