@@ -174,6 +174,15 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 - [Bitrefill Agents](https://github.com/bitrefill/agents) - Agent skills for shopping on Bitrefill (bitrefill-website, bitrefill-cli).
 - [Bitrefill CLI](https://github.com/bitrefill/cli) - Command-line client. Browse, buy, and manage gift cards, top-ups, and eSIMs.
 
+### MoltPe
+
+AI-native payment infrastructure that gives AI agents isolated wallets with programmable spending policies for autonomous USDC transactions. Tri-rail support: x402 (HTTP-native), MPP (session-based), and traditional fiat. Non-custodial wallets with Shamir key splitting, sub-second settlement on Polygon PoS, Base, and Tempo. Free tier, no credit card.
+
+- [MoltPe Site](https://moltpe.com) - Product, docs, India guide, pricing.
+- [MoltPe Open Source Reference](https://github.com/umangbuilds/moltpe-agent-payments) - Apache 2.0 reference implementation with 11 MCP tools, x402 client SDK, and tri-rail provider abstraction. 87 tests passing, zero runtime dependencies.
+- [MCP Server Guide](https://moltpe.com/blog/mcp-server-for-ai-agent-payments) - Connect Claude Desktop, Cursor, or Windsurf for autonomous agent payments.
+- [Cost benchmark for India](https://moltpe.com/blog/cost-of-ai-agent-payments-india-2026-benchmark) - 4-scenario comparison vs PayPal, Wise, Razorpay, Stripe India.
+
 ## Further reading
 
 - [MCP, A2A, ACP, ANP Survey Paper](https://arxiv.org/html/2505.02279v1) - Academic comparison of all major agent protocols.
