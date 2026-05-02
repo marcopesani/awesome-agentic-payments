@@ -85,6 +85,7 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 - [x402 Specification](https://github.com/coinbase/x402/tree/main/specs) - Full technical specification.
 - [x402 Coinbase Documentation](https://docs.cdp.coinbase.com/x402/welcome) - Developer docs and quickstart.
 - [x402 on Solana](https://solana.com/developers/guides/getstarted/intro-to-x402) - Solana integration guide.
+- [Voidly Pay](https://github.com/voidly-ai/voidly-pay) - x402 facilitator and agent payment rail with escrow, streams, subscriptions, batch payouts, and a marketplace of 17 paid endpoints. Settles in USDC on Base via a Sourcify-verified vault. SDKs for TypeScript, Python, LangChain, CrewAI, AutoGen, LlamaIndex, Pydantic AI, Vercel AI, plus an MCP server. Free 10-credit faucet.
 
 ### L402
 
