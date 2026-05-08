@@ -85,6 +85,8 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 - [x402 Specification](https://github.com/coinbase/x402/tree/main/specs) - Full technical specification.
 - [x402 Coinbase Documentation](https://docs.cdp.coinbase.com/x402/welcome) - Developer docs and quickstart.
 - [x402 on Solana](https://solana.com/developers/guides/getstarted/intro-to-x402) - Solana integration guide.
+- [Onyx Actions](https://onyx-actions.onrender.com) - Reference paid MCP server with 33 agent endpoints across Base + Solana on-chain primitives (tx_explainer, token_risk_scan, jupiter_quote, wallet_activity), captcha OCR, browser automation, and web utility. USDC settlement via x402, no API keys.
+- [onyx-paid-mcp Framework](https://github.com/dimitrilaouanis-tech/onyx-mcp) - Open-source Python framework (FastAPI + x402 middleware) for shipping any paid MCP server. Auto-generated 402 challenges, Streamable HTTP MCP at /mcp/, Bazaar-spec manifest at /.well-known/x402.json.
 
 ### L402
 
