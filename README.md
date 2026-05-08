@@ -12,10 +12,12 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [AP2 (Agent Payments Protocol)](#ap2-agent-payments-protocol)
   - [UCP (Universal Commerce Protocol)](#ucp-universal-commerce-protocol)
   - [MPP (Machine Payments Protocol)](#mpp-machine-payments-protocol)
+  - [ERC-8183 (Agentic Commerce)](#erc-8183-agentic-commerce)
 - [Crypto payment rails](#crypto-payment-rails)
   - [x402](#x402)
   - [L402](#l402)
   - [Fewsats](#fewsats)
+  - [CardZero](#cardzero)
 - [Fiat payment rails](#fiat-payment-rails)
   - [Stripe](#stripe)
   - [Visa](#visa)
@@ -72,6 +74,14 @@ An open standard for machine payments, co-authored by Tempo and Stripe. MPP is d
 - [MPP Specification GitHub Repository](https://github.com/tempoxyz/mpp-specs) - Specifications for the Machine Payments Protocol.
 - [MPP-enabled Services Directory](https://mpp.dev/services) - Proxy endpoinds supporting MPP-over-Tempo payment for various data services.
 
+### ERC-8183 (Agentic Commerce)
+
+An EVM-native escrow standard for agent-to-agent service delivery. Where micropayment rails (x402, L402) settle instantly per request, ERC-8183 holds funds in escrow across a Job lifecycle (`createJob → approve → fund → submit → complete | reject`) so a neutral Evaluator can adjudicate disputes on-chain. Stablecoin-denominated; 3-way fee split (provider / evaluator / platform) enforced by the contract; refund-on-expiry; native composition with the ERC-8004 reputation registry on settlement.
+
+- [ERC-8183 Specification](https://eips.ethereum.org/EIPS/eip-8183) - Official EIP.
+- [ERC-8183 Discussion](https://ethereum-magicians.org/t/erc-8183-agentic-commerce/27902) - Community thread on Ethereum Magicians.
+- [ERC-8004 Specification](https://eips.ethereum.org/EIPS/eip-8004) - Companion identity + reputation registry that ERC-8183 contracts can write feedback to on settlement.
+
 ## Crypto payment rails
 
 Commerce protocols define what to buy; payment rails define how to pay. These enable programmatic, machine-to-machine payments without human intervention.
@@ -103,6 +113,14 @@ Practical toolkit for AI agents to make L402 payments. MCP server, CLI, and Pyth
 
 - [Fewsats MCP Server](https://github.com/fewsats/fewsats-mcp) - MCP server for AI agent payments.
 - [Fewsats Python SDK](https://github.com/Fewsats/L402-python) - L402 payments for AI agents.
+
+### CardZero
+
+Smart-contract wallet (ERC-4337) for AI agents on Base mainnet, USDC-denominated. Owner sets spending rules off-chain (per-tx limit, daily cap, whitelist, freeze) via dashboard; agent transacts autonomously within them. Buyer-side x402 support is built in. Also runs the first known production deployment of ERC-8004 (identity + reputation) and ERC-8183 (escrow) on a public mainnet.
+
+- [CardZero Official Site](https://cardzero.ai) - Documentation, OpenAPI, and `/llms-full.txt` corpus.
+- [CardZero GitHub](https://github.com/mrocker/CardZero) - Public docs, OpenAPI spec, multi-platform plugin sources.
+- [cardzero-mcp on npm](https://www.npmjs.com/package/cardzero-mcp) - 10-tool MCP server for direct integration with Claude Desktop / Code, Cursor, VS Code.
 
 ## Fiat payment rails
 
