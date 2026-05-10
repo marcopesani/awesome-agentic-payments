@@ -85,6 +85,7 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 - [x402 Specification](https://github.com/coinbase/x402/tree/main/specs) - Full technical specification.
 - [x402 Coinbase Documentation](https://docs.cdp.coinbase.com/x402/welcome) - Developer docs and quickstart.
 - [x402 on Solana](https://solana.com/developers/guides/getstarted/intro-to-x402) - Solana integration guide.
+- [x402agent.no](https://x402agent.no) - Live x402 production services: Norwegian business registry (Brønnøysundregistrene) lookups and SEO backlink analysis. USDC micropayments on Base, no signup needed. ([Discovery](https://x402agent.no/.well-known/x402.json))
 
 ### L402
 
