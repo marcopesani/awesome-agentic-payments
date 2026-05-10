@@ -26,6 +26,7 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [OpenAI](#openai)
   - [Shopify](#shopify)
   - [Bitrefill](#bitrefill)
+  - [anchor-x402](#anchor-x402)
 - [Further reading](#further-reading)
 - [How the pieces fit together](#how-the-pieces-fit-together)
 
@@ -174,6 +175,14 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 - [Bitrefill Agents](https://github.com/bitrefill/agents) - Agent skills for shopping on Bitrefill (bitrefill-website, bitrefill-cli).
 - [Bitrefill CLI](https://github.com/bitrefill/cli) - Command-line client. Browse, buy, and manage gift cards, top-ups, and eSIMs.
 
+### anchor-x402
+
+9-service x402-paid API for AI agents. Dual-chain hash anchoring on Base + Solana mainnet, OFAC sanctions screening, signed decision attestation, tx decode, ENS/SNS resolution, USD price, calldata decode, datetime parser, and bundled wallet intelligence. Agents pay per call in USDC -- no API keys, no accounts.
+
+- [anchor-x402 API](https://api.anchor-x402.com) - x402-enabled API gateway (Base + Solana mainnet).
+- [anchor-x402 GitHub](https://github.com/hypeprinter007-stack/anchor-x402) - Source, OpenAPI spec, and trust portal (MIT).
+- [anchor-x402-mcp](https://www.npmjs.com/package/anchor-x402-mcp) - 9-tool MCP server wrapping the API for any MCP client.
+
 ## Further reading
 
 - [MCP, A2A, ACP, ANP Survey Paper](https://arxiv.org/html/2505.02279v1) - Academic comparison of all major agent protocols.
@@ -220,6 +229,7 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 │  OpenAI (ChatGPT Instant Checkout · Operator · Merchant Apps)   │
 │  Shopify (Storefront MCP · UCP · 1M+ merchants)                 │
 │  Bitrefill (eCommerce MCP · Agent Skills · CLI)                 │
+│  anchor-x402 (x402 API · Anchor · Screen · Attest · Intel)      │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
