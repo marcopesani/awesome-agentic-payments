@@ -177,11 +177,11 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 
 ### anchor-x402
 
-9-service x402-paid API for AI agents. Dual-chain hash anchoring on Base + Solana mainnet, OFAC sanctions screening, signed decision attestation, tx decode, ENS/SNS resolution, USD price, calldata decode, datetime parser, and bundled wallet intelligence. Agents pay per call in USDC -- no API keys, no accounts.
+16-service x402-paid API for AI agents on Base + Solana mainnet. Nine commodity primitives (dual-chain hash anchoring, OFAC sanctions screening, signed decision attestation, tx decode, ENS/SNS resolution, USD price, calldata decode, datetime parser, bundled wallet intel), one async due-diligence investigator (`/v1/investigate`, $7.77), one verifiable signed RNG (`/v1/roll`), and five universal LLM endpoints (roast, oracle with anchored verdict, tldr, aura, grade). Agents pay per call in USDC -- no API keys, no accounts.
 
 - [anchor-x402 API](https://api.anchor-x402.com) - x402-enabled API gateway (Base + Solana mainnet).
 - [anchor-x402 GitHub](https://github.com/hypeprinter007-stack/anchor-x402) - Source, OpenAPI spec, and trust portal (MIT).
-- [anchor-x402-mcp](https://www.npmjs.com/package/anchor-x402-mcp) - 9-tool MCP server wrapping the API for any MCP client.
+- [anchor-x402-mcp](https://www.npmjs.com/package/anchor-x402-mcp) - 16-tool MCP server wrapping the API for any MCP client.
 
 ## Further reading
 
