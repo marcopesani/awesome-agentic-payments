@@ -16,6 +16,8 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [x402](#x402)
   - [L402](#l402)
   - [Fewsats](#fewsats)
+- [Agent treasury & wallet readiness](#agent-treasury--wallet-readiness)
+  - [Divigent](#divigent)
 - [Fiat payment rails](#fiat-payment-rails)
   - [Stripe](#stripe)
   - [Visa](#visa)
@@ -103,6 +105,20 @@ Practical toolkit for AI agents to make L402 payments. MCP server, CLI, and Pyth
 
 - [Fewsats MCP Server](https://github.com/fewsats/fewsats-mcp) - MCP server for AI agent payments.
 - [Fewsats Python SDK](https://github.com/Fewsats/L402-python) - L402 payments for AI agents.
+
+## Agent treasury & wallet readiness
+
+Infrastructure between policy decisions and payment execution. Policy platforms decide whether an agent *may* pay; these layers make sure the wallet actually *can* pay — by assessing liquidity, maintaining reserves, and recalling from yield positions before a spend fires.
+
+### Divigent
+
+Payment-ready treasury for agent wallets on Base mainnet. Brings treasury intelligence to funded wallets: assesses liquidity before payment, maintains adaptive reserves (ML-forecast per agent's spend behavior), recalls before spend, and deploys only excess USDC into monitored venues (Aave V3 + Steakhouse USDC Prime MetaMorpho). Sits between Policy and x402 in the agentic stack. Oak Security audited; live on Base.
+
+- [Divigent](https://divigent.ai) - Main site and overview.
+- [Divigent Documentation](https://divigent.gitbook.io/divigent-docs) - SDK + protocol docs.
+- [Divigent SDK](https://github.com/Divigent/divigent-sdk) - TypeScript SDK; `npm install @divigent/sdk`.
+- [Divigent MCP Server](https://github.com/Divigent/divigent-mcp) - Model Context Protocol server.
+- [Divigent Protocol](https://github.com/Divigent/divigent-protocol) - Smart contracts and audit.
 
 ## Fiat payment rails
 
