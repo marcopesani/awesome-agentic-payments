@@ -174,6 +174,14 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 - [Bitrefill Agents](https://github.com/bitrefill/agents) - Agent skills for shopping on Bitrefill (bitrefill-website, bitrefill-cli).
 - [Bitrefill CLI](https://github.com/bitrefill/cli) - Command-line client. Browse, buy, and manage gift cards, top-ups, and eSIMs.
 
+## Privacy & Compliance
+
+As agentic commerce scales, the payloads agents send and receive increasingly contain personally identifiable information (PII) — names, emails, national IDs, financial identifiers, and credentials. A privacy layer before the payment or LLM call is becoming a compliance requirement, not an afterthought.
+
+### PII Sanitization
+
+- [TrustBoost PII Sanitizer](https://github.com/teodorofodocrispin-cmyk/TrustBoost-PII-Sanitizer) — Open-source, x402-native PII sanitization layer for agentic pipelines. Sanitizes text before it reaches LLMs or external APIs. Returns sanitized content, safety score, and risk category. Every paid sanitization anchored on Solana via Helius. Supports 8 languages including LATAM identifiers (RFC, CUIT, CPF). EU AI Act compliant. Try free: `tx_hash=TRIAL`.
+
 ## Further reading
 
 - [MCP, A2A, ACP, ANP Survey Paper](https://arxiv.org/html/2505.02279v1) - Academic comparison of all major agent protocols.
