@@ -85,6 +85,7 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 - [x402 Specification](https://github.com/coinbase/x402/tree/main/specs) - Full technical specification.
 - [x402 Coinbase Documentation](https://docs.cdp.coinbase.com/x402/welcome) - Developer docs and quickstart.
 - [x402 on Solana](https://solana.com/developers/guides/getstarted/intro-to-x402) - Solana integration guide.
+- [gold-402](https://github.com/Haustorium12/gold-402) - Curated x402 directory by 24K Labs. 300+ handpicked entries across facilitators, SDKs, MCP servers, APIs, and tools, with editorial writeups and verified badges for production-confirmed services. Backed by a 29,000+ entry catalog from CDP Bazaar and Agentic.market.
 
 ### L402
 
