@@ -86,6 +86,7 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 - [x402 Coinbase Documentation](https://docs.cdp.coinbase.com/x402/welcome) - Developer docs and quickstart.
 - [x402 on Solana](https://solana.com/developers/guides/getstarted/intro-to-x402) - Solana integration guide.
 
+- [The Stall](https://github.com/thebrierfox/the-stall) - Live x402 MCP server with 183 pay-per-call financial data tools. Stock prices, DeFi yields, options chains, prediction markets, and crypto analytics — priced in USDC micropayments on Base. No API key required.
 ### L402
 
 Lightning Labs' protocol combining Macaroons (cryptographic bearer credentials) with Lightning Network micropayments for stateless API authentication. Pay-per-request APIs with no accounts and instant settlement. The Bitcoin-native counterpart to x402.
