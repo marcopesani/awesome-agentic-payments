@@ -14,6 +14,7 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [MPP (Machine Payments Protocol)](#mpp-machine-payments-protocol)
 - [Crypto payment rails](#crypto-payment-rails)
   - [x402](#x402)
+  - [xpay](#xpay)
   - [L402](#l402)
   - [Fewsats](#fewsats)
 - [Fiat payment rails](#fiat-payment-rails)
@@ -85,6 +86,14 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 - [x402 Specification](https://github.com/coinbase/x402/tree/main/specs) - Full technical specification.
 - [x402 Coinbase Documentation](https://docs.cdp.coinbase.com/x402/welcome) - Developer docs and quickstart.
 - [x402 on Solana](https://solana.com/developers/guides/getstarted/intro-to-x402) - Solana integration guide.
+
+### xpay
+
+Independent x402 facilitator for agent-initiated stablecoin payments. Implements the standard x402 `/verify`, `/settle`, and `/supported` endpoints, settling USDC on Base mainnet with no API key, account, or signup. Lets businesses accept agent payments and lets agents pay any x402-enabled endpoint through a single hosted facilitator.
+
+- [xpay Facilitator](https://facilitator.xpay.sh) - Hosted x402 facilitator (verify/settle/supported) on Base mainnet.
+- [xpay](https://xpay.sh) - Documentation and overview.
+- [awesome-x402](https://github.com/xpaysh/awesome-x402) - Curated list of x402 protocol resources and implementations.
 
 ### L402
 
