@@ -91,8 +91,8 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 
 Independent x402 facilitator for agent-initiated stablecoin payments. Implements the standard x402 `/verify`, `/settle`, and `/supported` endpoints, settling USDC on Base mainnet with no API key, account, or signup. Lets businesses accept agent payments and lets agents pay any x402-enabled endpoint through a single hosted facilitator.
 
-- [xpay Facilitator](https://facilitator.xpay.sh) - Hosted x402 facilitator (verify/settle/supported) on Base mainnet.
-- [xpay](https://xpay.sh) - Documentation and overview.
+- [xpay Facilitator](https://www.xpay.sh/x402-facilitators/xpay/) - Independent x402 facilitator on Base mainnet (verify/settle/supported).
+- [Facilitator endpoint](https://facilitator.xpay.sh) - Hosted facilitator API base URL.
 - [awesome-x402](https://github.com/xpaysh/awesome-x402) - Curated list of x402 protocol resources and implementations.
 
 ### L402
