@@ -1,6 +1,6 @@
 # Awesome Agentic Commerce [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of protocols, specs, SDKs, and tools powering the emerging agentic commerce stack: AI agents that discover, negotiate, pay, and transact autonomously.
+> A curated list of protocols, specs, SDKs, and tools powering the emerging agentic commerce stack: AI agents that discover, buy, and manage orders autonomously.
 
 Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
 
@@ -22,6 +22,10 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [Mastercard](#mastercard)
   - [PayPal](#paypal)
   - [Cloudflare](#cloudflare)
+- [Protocol proposals and standards](#protocol-proposals-and-standards)
+  - [Ethereum](#ethereum)
+  - [Solana](#solana)
+  - [Cross-chain and standards bodies](#cross-chain-and-standards-bodies)
 - [Ecosystem](#ecosystem)
   - [OpenAI](#openai)
   - [Shopify](#shopify)
@@ -70,7 +74,7 @@ An open standard for machine payments, co-authored by Tempo and Stripe. MPP is d
 
 - [MPP Official Site](https://mpp.dev/) - Primary documentation portal.
 - [MPP Specification GitHub Repository](https://github.com/tempoxyz/mpp-specs) - Specifications for the Machine Payments Protocol.
-- [MPP-enabled Services Directory](https://mpp.dev/services) - Proxy endpoinds supporting MPP-over-Tempo payment for various data services.
+- [MPP-enabled Services Directory](https://mpp.dev/services) - Proxy endpoints supporting MPP-over-Tempo payment for various data services.
 
 ## Crypto payment rails
 
@@ -85,6 +89,7 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 - [x402 Specification](https://github.com/coinbase/x402/tree/main/specs) - Full technical specification.
 - [x402 Coinbase Documentation](https://docs.cdp.coinbase.com/x402/welcome) - Developer docs and quickstart.
 - [x402 on Solana](https://solana.com/developers/guides/getstarted/intro-to-x402) - Solana integration guide.
+- [x402 Foundation](https://github.com/x402-foundation/x402) - Neutral governance of the standard under the Linux Foundation, with 22 supporting organizations. [Foundation page](https://linuxfoundation.org/x402foundation/).
 
 ### L402
 
@@ -92,10 +97,11 @@ Lightning Labs' protocol combining Macaroons (cryptographic bearer credentials) 
 
 **Note:** "LN402" is not a separate protocol; references to LN402 point back to L402.
 
-- [L402 Builder's Guide](https://docs.lightning.engineering/the-lightning-network/l402) - Comprehensive documentation.
+- [L402 Builder's Guide](https://docs.lightning.engineering/the-lightning-network/l402) - Full documentation.
 - [L402 Protocol Specification](https://docs.lightning.engineering/the-lightning-network/l402/protocol-specification) - Full technical spec.
 - [L402 GitHub Repository](https://github.com/lightninglabs/L402) - Protocol specification source.
 - [Aperture](https://github.com/lightninglabs/aperture) - Production L402 reverse proxy for REST and gRPC APIs.
+- [L402 standardization (bLIP-0026)](https://github.com/lightning/blips/pull/26) - Proposed Lightning spec for the HTTP-402 flow, underpinned by BOLT 11 invoices and LNURL-auth.
 
 ### Fewsats
 
@@ -147,9 +153,40 @@ Infrastructure backbone for most agentic commerce protocols (ACP, AP2, UCP). Key
 - [Cloudflare x402 Integration](https://developers.cloudflare.com/agents/x402/) - x402 in the Agents SDK.
 - [Cloudflare Secure Agentic Commerce](https://blog.cloudflare.com/secure-agentic-commerce/) - Visa and Mastercard protocol support announcement.
 
+## Protocol proposals and standards
+
+The rails above are products. This section tracks the layer underneath them, narrowed to proposals and standards that explicitly target AI agents and date from 2024 or later. Ethereum ERCs cover agent permissions and on-chain agent identity; Solana ships agent SDKs, a CLI, and an agent registry; and cross-chain standards bodies define how agents authenticate and prove identity across networks. Each entry is tagged **Live** (shipped or activated), **Draft** (in progress), or **Forming** (group still organizing).
+
+### Ethereum
+
+The agent-specific ERCs fall into two groups: session-key and permission standards that bound what an agent may spend, and the 8004/8126/8196 family that standardizes on-chain agent identity, verification, and policy-bound wallets.
+
+- [ERC-7710 + ERC-7715: Permissions and Session Keys](https://github.com/ethereum/ERCs/blob/master/ERCS/erc-7710.md) - Draft. Spending-policy and session-key ERCs; ERC-7710 explicitly targets bounded permissions for AI agents. See also [ERC-7715](https://github.com/ethereum/ERCs/blob/master/ERCS/erc-7715.md).
+- [ERC-8004: Trustless Agents](https://github.com/ethereum/ERCs/blob/master/ERCS/erc-8004.md) - Draft. On-chain registration of AI agent identity and reputation; interoperates with Solana's Agent Registry. Hub: [8004.org](https://8004.org).
+- [ERC-8126: AI Agent Verification](https://github.com/ethereum/ERCs/blob/master/ERCS/erc-8126.md) - Draft. A risk-scoring and verification layer for registered agents.
+- [ERC-8196: AI Agent Authenticated Wallet](https://github.com/ethereum/ERCs/blob/master/ERCS/erc-8196.md) - Draft. Policy-bound transaction execution and verifiable credential delegation for autonomous agents; builds on ERC-8004 and ERC-8126. Discussion: [Fellowship of Ethereum Magicians](https://ethereum-magicians.org/t/erc-8196-ai-agent-authenticated-wallet/27987).
+
+### Solana
+
+Solana's agent tooling is already in production. The Foundation's MPP/x402 SDK and `pay` CLI resolve HTTP-402 payment challenges for agents, an on-chain Agent Registry handles verifiable agent identity, and a maintained skills set covers payments and commerce.
+
+- [Solana Foundation MPP SDK](https://github.com/solana-foundation/mpp-sdk) - Live. The Solana Foundation's multi-language SDK implementing [MPP](#mpp-machine-payments-protocol) (plus x402 and AP2), including a Solana charge-intent payment method ([draft-solana-charge-00](https://paymentauth.org/draft-solana-charge-00)).
+- [Solana `pay` CLI and Skills](https://github.com/solana-foundation/pay) - Live. An agent CLI that auto-resolves x402 and MPP 402 challenges for Claude and Codex sessions, with a [paid-API skills catalog](https://github.com/solana-foundation/pay-skills).
+- [Solana Agent Registry](https://solana.com/agent-registry) - Live. An on-chain protocol for verifiable agent identity, portable reputation, and validation attestations; interoperable with ERC-8004.
+- [Solana Agent Skills](https://solana.com/SKILL.md) - Live. Foundation-maintained `SKILL.md` skills for agents building on Solana, including a Payments and Commerce skill.
+
+### Cross-chain and standards bodies
+
+Rail-agnostic standards bodies define how agents authenticate and prove identity across networks. The IETF Web Bot Auth Working Group (built on HTTP Message Signatures) is the primary venue for authenticating agents on the web, with Visa TAP and Mastercard Agent Pay aligning to it; FIDO, W3C, and OpenID are standardizing agent identity and credentials.
+
+- [IETF Web Bot Auth Working Group](https://datatracker.ietf.org/wg/webbotauth/) - Draft. The standards body for authenticating bots and agents on the web, built on HTTP Message Signatures; Visa TAP and Mastercard Agent Pay align here.
+- [FIDO Alliance: Agentic AI](https://fidoalliance.org/fido-alliance-agentic-ai/) - Forming. Agentic Authentication and Payments Technical Working Groups (chaired by Mastercard and Visa); Google AP2 v0.2 was donated here for standardization.
+- [W3C Agent Identity Registry Protocol CG](https://github.com/AgentIdentityRegistry/agent-identity-registry) - Forming (2026). Open specs for verifiable agent identity: a DID method, Verifiable-Credential agent credentials, and trust negotiation. [Spec](https://github.com/AgentIdentityRegistry/agent-identity-registry/blob/main/docs/SPECIFICATION.md).
+- [IETF draft: OpenID Agent Identity Claims](https://datatracker.ietf.org/doc/draft-sharif-openid-agent-identity/) - Draft. OpenID Connect claims for autonomous agents (agent id, owner, capabilities, spend limit).
+
 ## Ecosystem
 
-Commerce platforms, merchant programs, and tooling that connect agents to real-world buying experiences. These sit above the payment rails — they decide *what* gets bought and *where*, while rails handle the *how*.
+Commerce platforms, merchant programs, and tooling that connect agents to real-world buying experiences. These sit above the payment rails; they decide *what* gets bought and *where*, while rails handle the *how*.
 
 ### OpenAI
 
@@ -180,7 +217,7 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 
 ## How the pieces fit together
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────────┐
 │                     USER / AI AGENT                             │
 │   Claude Code · OpenAI Agents · Google ADK · Copilot CLI        │
@@ -213,6 +250,13 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 │                                  PayPal · Adyen · Square        │
 │                                                                 │
 │  Infrastructure: Cloudflare (x402 + Visa/MC in Agents SDK)      │
+└──────────────────────────┬──────────────────────────────────────┘
+                           │
+┌──────────────────────────▼──────────────────────────────────────┐
+│                  PROTOCOL PROPOSALS & STANDARDS                 │
+│  Ethereum: ERC-7710 · ERC-8004/8126/8196                        │
+│  Solana: MPP SDK · pay CLI · Agent Registry · Skills            │
+│  Bodies: IETF Web Bot Auth · FIDO · W3C · OpenID                │
 └──────────────────────────┬──────────────────────────────────────┘
                            │
 ┌──────────────────────────▼──────────────────────────────────────┐
