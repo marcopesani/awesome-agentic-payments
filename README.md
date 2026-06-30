@@ -26,6 +26,7 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [Ethereum](#ethereum)
   - [Solana](#solana)
   - [Cross-chain and standards bodies](#cross-chain-and-standards-bodies)
+  - [Bolyra](#bolyra)
 - [Ecosystem](#ecosystem)
   - [OpenAI](#openai)
   - [Shopify](#shopify)
@@ -183,6 +184,16 @@ Rail-agnostic standards bodies define how agents authenticate and prove identity
 - [FIDO Alliance: Agentic AI](https://fidoalliance.org/fido-alliance-agentic-ai/) - Forming. Agentic Authentication and Payments Technical Working Groups (chaired by Mastercard and Visa); Google AP2 v0.2 was donated here for standardization.
 - [W3C Agent Identity Registry Protocol CG](https://github.com/AgentIdentityRegistry/agent-identity-registry) - Forming (2026). Open specs for verifiable agent identity: a DID method, Verifiable-Credential agent credentials, and trust negotiation. [Spec](https://github.com/AgentIdentityRegistry/agent-identity-registry/blob/main/docs/SPECIFICATION.md).
 - [IETF draft: OpenID Agent Identity Claims](https://datatracker.ietf.org/doc/draft-sharif-openid-agent-identity/) - Draft. OpenID Connect claims for autonomous agents (agent id, owner, capabilities, spend limit).
+
+### Bolyra
+
+ZKP-based agent identity and authorization protocol. Agents prove EdDSA-signed credentials with scoped permissions via Groth16 zero-knowledge proofs; a delegation circuit narrows scope one-way without revealing the parent key. Includes a DID method (`did:bolyra`), on-chain verifiers (Solidity), conformance test vectors, and SDKs for TypeScript and Python. Live on npm and PyPI; Apache 2.0.
+
+- [Bolyra GitHub Repository](https://github.com/bolyra/bolyra) - Circuits, contracts, SDKs, and specification (Apache 2.0).
+- [Bolyra Official Site](https://bolyra.ai) - Documentation, playground, and protocol overview.
+- [@bolyra/sdk on npm](https://www.npmjs.com/package/@bolyra/sdk) - TypeScript SDK for proof generation and verification.
+- [bolyra on PyPI](https://pypi.org/project/bolyra/) - Python SDK.
+- [@bolyra/gateway on npm](https://www.npmjs.com/package/@bolyra/gateway) - HTTP gateway for ZKP-authenticated agent requests.
 
 ## Ecosystem
 
