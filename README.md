@@ -30,6 +30,7 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [OpenAI](#openai)
   - [Shopify](#shopify)
   - [Bitrefill](#bitrefill)
+  - [GenTech Labs](#gentech-labs)
 - [Further reading](#further-reading)
 - [How the pieces fit together](#how-the-pieces-fit-together)
 
@@ -90,6 +91,7 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 - [x402 Coinbase Documentation](https://docs.cdp.coinbase.com/x402/welcome) - Developer docs and quickstart.
 - [x402 on Solana](https://solana.com/developers/guides/getstarted/intro-to-x402) - Solana integration guide.
 - [x402 Foundation](https://github.com/x402-foundation/x402) - Neutral governance of the standard under the Linux Foundation, with 22 supporting organizations. [Foundation page](https://linuxfoundation.org/x402foundation/).
+- [GenTech Agent Kit](https://github.com/ProtoJay4789/genTech-agent-kit) - Live. A multi-chain x402 payment gateway (Base + Solana) wrapped as deployable agent skills: market intelligence, wallet analysis, token security, NFT search, airdrop checking, and game/movie intelligence. 12 services listed in the [Solana pay-skills catalog](https://github.com/solana-foundation/pay-skills).
 
 ### L402
 
@@ -210,6 +212,13 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 - [eCommerce MCP Server](https://docs.bitrefill.com/docs/ecommerce-mcp) - MCP server documentation.
 - [Bitrefill Agents](https://github.com/bitrefill/agents) - Agent skills for shopping on Bitrefill (bitrefill-website, bitrefill-cli).
 - [Bitrefill CLI](https://github.com/bitrefill/cli) - Command-line client. Browse, buy, and manage gift cards, top-ups, and eSIMs.
+
+### GenTech Labs
+
+Full-stack agent infrastructure: multichain x402 payment gateway, ERC-8004 agent identity, and a deployable Agent Kit with 12 paid API services across market intelligence, token security, wallet analysis, and content discovery. All published in the [Solana pay-skills catalog](https://github.com/solana-foundation/pay-skills).
+
+- [GenTech Agent Kit](https://github.com/ProtoJay4789/genTech-agent-kit) - Live. Agent skills + x402 payment gateway + identity toolkit.
+- [GenTech x402 Gateway](https://api.gentechlabs.net/v1/health) - Live. Multichain x402 payment gateway (Base + Solana) with 9 service categories.
 
 ## Further reading
 
