@@ -90,6 +90,7 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 - [x402 Coinbase Documentation](https://docs.cdp.coinbase.com/x402/welcome) - Developer docs and quickstart.
 - [x402 on Solana](https://solana.com/developers/guides/getstarted/intro-to-x402) - Solana integration guide.
 - [x402 Foundation](https://github.com/x402-foundation/x402) - Neutral governance of the standard under the Linux Foundation, with 22 supporting organizations. [Foundation page](https://linuxfoundation.org/x402foundation/).
+- [AsterPay](https://asterpay.io/) - x402 + MPP facilitator with fiat settlement: agents pay USDC on Base/Ethereum/Polygon/Arbitrum/Optimism, merchants receive EUR via SEPA Instant. Includes KYA agent trust scoring (ERC-8004) published on the Intuition knowledge graph.
 
 ### L402
 
