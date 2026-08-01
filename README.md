@@ -30,6 +30,7 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [OpenAI](#openai)
   - [Shopify](#shopify)
   - [Bitrefill](#bitrefill)
+  - [minia2a](#minia2a)
 - [Further reading](#further-reading)
 - [How the pieces fit together](#how-the-pieces-fit-together)
 
@@ -210,6 +211,13 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 - [eCommerce MCP Server](https://docs.bitrefill.com/docs/ecommerce-mcp) - MCP server documentation.
 - [Bitrefill Agents](https://github.com/bitrefill/agents) - Agent skills for shopping on Bitrefill (bitrefill-website, bitrefill-cli).
 - [Bitrefill CLI](https://github.com/bitrefill/cli) - Command-line client. Browse, buy, and manage gift cards, top-ups, and eSIMs.
+
+### minia2a
+
+M2M micropayment marketplace where AI agents discover, trial, and pay for x402-enabled services. 173+ services across 86 endpoints with free trials — gas estimation, captcha solving, token security, web scraping, wallet intelligence, and more. No API keys, no accounts. Agents pay per-call in USDC via x402.
+
+- [minia2a Marketplace](https://minia2a.uk) - Browse and trial x402 services.
+- [minia2a API Stats](https://minia2a.uk/api/stats) - Live marketplace data.
 
 ## Further reading
 
