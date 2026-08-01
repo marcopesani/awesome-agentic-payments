@@ -90,6 +90,7 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 - [x402 Coinbase Documentation](https://docs.cdp.coinbase.com/x402/welcome) - Developer docs and quickstart.
 - [x402 on Solana](https://solana.com/developers/guides/getstarted/intro-to-x402) - Solana integration guide.
 - [x402 Foundation](https://github.com/x402-foundation/x402) - Neutral governance of the standard under the Linux Foundation, with 22 supporting organizations. [Foundation page](https://linuxfoundation.org/x402foundation/).
+- [minia2a.uk](https://minia2a.uk) - Live x402 marketplace with 174+ pay-per-use services across crypto data, web scraping, CAPTCHA solving, email, DNS/IP, and more. Agents discover, call, and auto-pay in USDC on Base with no signup, no KYC, no API keys. Includes the Genesis Registry for on-chain agent memorialization. ([GitHub](https://github.com/minia2a)) \| ([Stats](https://minia2a.uk/api/stats))
 
 ### L402
 
