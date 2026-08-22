@@ -110,6 +110,14 @@ Practical toolkit for AI agents to make L402 payments. MCP server, CLI, and Pyth
 - [Fewsats MCP Server](https://github.com/fewsats/fewsats-mcp) - MCP server for AI agent payments.
 - [Fewsats Python SDK](https://github.com/Fewsats/L402-python) - L402 payments for AI agents.
 
+ ### Firmata Protocol
+
+  On-chain Know Your Agent (KYA) trust layer that pairs x402 settlement with verified identity (ERC-8004) and conditional     
+  escrow (ERC-8183), so an agent payment is bound to a verified counterparty and a job that completes or refunds. Not a rail; it sits above x402. On Arc (Circle's L1) and Base. Testnet.
+
+  - [firmata.ai](https://firmata.ai) - Protocol overview: the job lifecycle and the three standards it composes.
+  - [meridian-ecosystem](https://github.com/MeridianFinance/meridian-ecosystem) - Public ecosystem index and glossary defining on-chain KYA.
+
 ## Fiat payment rails
 
 Card networks and payment processors building agent-specific primitives: tokenized credentials, sessionless merchant auth, and scoped payment tokens.
@@ -165,6 +173,7 @@ The agent-specific ERCs fall into two groups: session-key and permission standar
 - [ERC-8004: Trustless Agents](https://github.com/ethereum/ERCs/blob/master/ERCS/erc-8004.md) - Draft. On-chain registration of AI agent identity and reputation; interoperates with Solana's Agent Registry. Hub: [8004.org](https://8004.org).
 - [ERC-8126: AI Agent Verification](https://github.com/ethereum/ERCs/blob/master/ERCS/erc-8126.md) - Draft. A risk-scoring and verification layer for registered agents.
 - [ERC-8196: AI Agent Authenticated Wallet](https://github.com/ethereum/ERCs/blob/master/ERCS/erc-8196.md) - Draft. Policy-bound transaction execution and verifiable credential delegation for autonomous agents; builds on ERC-8004 and ERC-8126. Discussion: [Fellowship of Ethereum Magicians](https://ethereum-magicians.org/t/erc-8196-ai-agent-authenticated-wallet/27987).
+- [ERC-8183: Agentic Commerce](https://github.com/ethereum/ERCs/b  lob/master/ERCS/erc-8183.md) - Draft. A "Job" escrow standard for agent-to-agent commerce: an escrowed budget with four states (Open, Funded, Submitted, Terminal) and an evaluator who marks completion, releasing funds to the provider or refunding the client. Discussion: [Fellowship of Ethereum Magicians](https://ethereum-magicians.org/t/erc-8183-agentic-commerce/27902).
 
 ### Solana
 
