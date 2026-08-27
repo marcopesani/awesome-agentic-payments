@@ -5,7 +5,6 @@
 Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
 
 ## Contents
-- [ox402-utils](https://treating-arcade-overall-enough.trycloudflare.com) - 88 paid tools for AI agents via x402 (USDC on Base): AI image gen, rewrite/translate, resume parser, PDF tools, research, security, media, speech (Kokoro TTS). MCP server at /mcp402/. Free tier: 5 calls/IP.
 
 - [Why agentic commerce](#why-agentic-commerce)
 - [Commerce protocols](#commerce-protocols)
@@ -271,3 +270,5 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 ## Contributing
 
 Contributions welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first. Only official sources (specs, docs, SDKs, and official blog posts from the maintaining organizations) are accepted.
+
+- [ox402-utils](https://deviant-oils-guardian-coating.trycloudflare.com) - 87 paid micro-utilities for AI agents via x402 (USDC on Base): research/web, PDF+OCR, speech (Kokoro neural TTS, Whisper STT), security recon, dev tools, media. Free trial: 10 calls/IP. MCP server at /mcp402/. SDK: POST /x402/paid/<tool> with x402 payment.
