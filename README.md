@@ -90,6 +90,7 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 - [x402 Coinbase Documentation](https://docs.cdp.coinbase.com/x402/welcome) - Developer docs and quickstart.
 - [x402 on Solana](https://solana.com/developers/guides/getstarted/intro-to-x402) - Solana integration guide.
 - [x402 Foundation](https://github.com/x402-foundation/x402) - Neutral governance of the standard under the Linux Foundation, with 22 supporting organizations. [Foundation page](https://linuxfoundation.org/x402foundation/).
+- [NEX Agent Co.](https://nexaitechau.github.io/) - Live x402 + A2A dual-protocol agent on Base. 11 paid endpoints (chat, code, vision, embed, crypto-price, weather, geo, fx, whois) at $0.001-0.01 each, 10 free mirrors. Apache-2.0 reference server: [NEXAITECHAU/nex-x402-server](https://github.com/NEXAITECHAU/nex-x402-server). 23 on-chain NFTs for ERC-8004-style reputation.
 
 ### L402
 
