@@ -30,6 +30,7 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [OpenAI](#openai)
   - [Shopify](#shopify)
   - [Bitrefill](#bitrefill)
+  - [Peer](#peer)
 - [Further reading](#further-reading)
 - [How the pieces fit together](#how-the-pieces-fit-together)
 
@@ -210,6 +211,14 @@ Bitrefill maintains this list and provides agentic commerce tooling: an eCommerc
 - [eCommerce MCP Server](https://docs.bitrefill.com/docs/ecommerce-mcp) - MCP server documentation.
 - [Bitrefill Agents](https://github.com/bitrefill/agents) - Agent skills for shopping on Bitrefill (bitrefill-website, bitrefill-cli).
 - [Bitrefill CLI](https://github.com/bitrefill/cli) - Command-line client. Browse, buy, and manage gift cards, top-ups, and eSIMs.
+
+### Peer
+
+Peer provides an official agent interface for finding peer-to-peer fiat-to-USDC quotes and funding wallet workflows. Its hosted MCP endpoint is read-only; local CLI and MCP profiles keep signing under user control and preview writes or return unsigned transaction plans.
+
+- [Peer for Agents](https://agents.peer.xyz/) - Official agent documentation and hosted MCP connection details.
+- [Peer CLI and MCP](https://github.com/zkp2p/peer-cli) - Open-source JSON-first CLI and MCP server, published as `peer-protocol-cli`.
+- [Peer MCP documentation](https://agents.peer.xyz/docs/reference/mcp) - Hosted read-only and local profile setup.
 
 ## Further reading
 
