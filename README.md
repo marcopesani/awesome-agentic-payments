@@ -16,6 +16,7 @@ Maintained by [Bitrefill](https://www.bitrefill.com). Contributions welcome.
   - [x402](#x402)
   - [L402](#l402)
   - [Fewsats](#fewsats)
+  - [PipRail](#piprail)
 - [Fiat payment rails](#fiat-payment-rails)
   - [Stripe](#stripe)
   - [Visa](#visa)
@@ -109,6 +110,15 @@ Practical toolkit for AI agents to make L402 payments. MCP server, CLI, and Pyth
 
 - [Fewsats MCP Server](https://github.com/fewsats/fewsats-mcp) - MCP server for AI agent payments.
 - [Fewsats Python SDK](https://github.com/Fewsats/L402-python) - L402 payments for AI agents.
+
+### PipRail
+
+Open source TypeScript SDK for x402 payments across 29 chains, letting a server charge for a request and an AI agent pay for one. Verification runs against the developer's own RPC node, with no backend and no fee in between. Ships an MCP server that gives any MCP client a budget-bound wallet.
+
+- [PipRail GitHub Repository](https://github.com/piprail/piprail) - MIT-licensed SDK and MCP server.
+- [PipRail Documentation](https://docs.piprail.com) - Developer docs and quickstart.
+- [Supported chains](https://docs.piprail.com/chains/overview/) - 29 chains across 10 families, with the per-chain verification notes.
+- [Facilitator coverage](https://piprail.com/facilitators) - Which keyless x402 facilitators settle on which networks, each verified by a settled mainnet transaction.
 
 ## Fiat payment rails
 
