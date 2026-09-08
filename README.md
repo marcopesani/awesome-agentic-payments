@@ -90,6 +90,7 @@ Uses HTTP 402 "Payment Required" for instant stablecoin payments over HTTP. Buil
 - [x402 Coinbase Documentation](https://docs.cdp.coinbase.com/x402/welcome) - Developer docs and quickstart.
 - [x402 on Solana](https://solana.com/developers/guides/getstarted/intro-to-x402) - Solana integration guide.
 - [x402 Foundation](https://github.com/x402-foundation/x402) - Neutral governance of the standard under the Linux Foundation, with 22 supporting organizations. [Foundation page](https://linuxfoundation.org/x402foundation/).
+- [Veriton HTML→JSON](https://veriton-html-json-api.netlify.app) - Live metered agent API: HTML/fetch → structured JSON on Base USDC ($0.02–$0.05/call). Free demo + MCP `/mcp` + HTTP 402 x402 accepts. Docs: [OpenAPI](https://veriton-html-json-api.netlify.app/v1/openapi.json).
 
 ### L402
 
